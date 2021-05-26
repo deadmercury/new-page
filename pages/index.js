@@ -3,6 +3,7 @@ import Feed from '../components/Feed';
 import SearchBar from '../components/SearchBar';
 import Weather from '../components/Weather';
 import styles from '../styles/index.module.css';
+import { decode } from 'html-entities';
 
 export default function Index({ hnPosts, time, redditPosts, weather }) {
   console.log(`Last Updated at ${time}`);
@@ -57,6 +58,7 @@ export async function getStaticProps() {
     const name = 'Hacker News';
     const properties = ['title', 'url', 'postURL'];
     posts = posts.map((post) => {
+      post.title = decode(post.title);
       post.postURL = `https://news.ycombinator.com/item?id=${post['id']}`;
       return filterObject(post, properties);
     });
@@ -95,7 +97,13 @@ export async function getStaticProps() {
     const name = posts[0]['subreddit'];
     // clean jsondata
     posts = posts.map((post) => {
-      post.postURL = `https:reddit.com${post['permalink']}`;
+      post.title = decode(post.title);
+      post.postURL = `https://www.reddit.com${post['permalink']}`;
+      try {
+        let url = new URL(post.url);
+      } catch (e) {
+        post.url = `https://www.reddit.com${post.url}`;
+      }
       return filterObject(post, properties);
     });
     return { name, posts };
