@@ -1,0 +1,21 @@
+.container {
+  justify-self: center;
+  display: flex;
+}
+
+.text {
+  color: #eae1e1;
+  font-family: 'Inter', sans-serif;
+}
+
+.temp {
+  composes: text;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.unit {
+  composes: text;
+  font-weight: 400;
+  font-size: 1.8rem;
+}

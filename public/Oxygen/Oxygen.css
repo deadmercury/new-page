@@ -1,0 +1,30 @@
+@font-face{
+  font-family: 'Oxygen';
+  font-weight: 300;
+  font-style: normal;
+  src: url('./oxygen-v10-latin-300.woff2') format('woff2'),
+       url('./oxygen-v10-latin-300.woff') format('woff'),
+       url('./oxygen-v10-latin-300.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Oxygen';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./oxygen-v10-latin-700.woff2') format('woff2'),
+       url('./oxygen-v10-latin-700.woff') format('woff'),
+       url('./oxygen-v10-latin-700.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face{
+  font-family: 'Oxygen';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./oxygen-v10-latin-regular.woff2') format('woff2'),
+       url('./oxygen-v10-latin-regular.woff') format('woff'),
+       url('./oxygen-v10-latin-regular.ttf') format('truetype');
+  font-display: swap;
+}
+

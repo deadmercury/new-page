@@ -1,9 +1,12 @@
+@import url('../public/Inter/Inter.css');
+@import url('../public/Oxygen/Oxygen.css');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #010101;
+  color: white;
 }
 
 a {

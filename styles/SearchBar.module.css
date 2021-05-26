@@ -1,0 +1,46 @@
+.form {
+  justify-self: center;
+  display: flex;
+}
+
+.select {
+  align-self: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  margin-left: 0.8rem;
+}
+
+.dropdown > * {
+  cursor: pointer;
+}
+
+.searchbar {
+  background-color: #f0ece2;
+  border: none;
+  padding: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  width: 50vw;
+}
+
+.searchicon {
+  background-color: #f0ece2;
+  border: none;
+  position: relative;
+  left: -2px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+.searchbar:focus,
+.searchicon:focus {
+  z-index: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .searchbar {
+    width: 70vw;
+  }
+}

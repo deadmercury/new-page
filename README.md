@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# New Page
 
-## Getting Started
+For Home or New Tab. Made with NextJS and deployed on Vercel.
 
-First, run the development server:
+## Environment Variables
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+`OWP_API` - OpenWeatherMap API Key
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## References
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Design On [Figma](https://www.figma.com/file/p2PtZwZPG1GHZ8VtGl66Tr/New-Page?node-id=0%3A1)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Icons from [Iconify](https://iconify.design/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Weather data from [OpenWeatherMap](https://openweathermap.org/api)
 
-## Learn More
+- HackerNews [API](https://github.com/HackerNews/API)
 
-To learn more about Next.js, take a look at the following resources:
+- Reddit [API](https://old.reddit.com/dev/api/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Accessible Icon Buttons](<(https://www.sarasoueidan.com/blog/accessible-icon-buttons/)>) by Sara Soueidan
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Fonts downloaded with [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Filter object properties by key in ES6 on [Stack Overflow](https://stackoverflow.com/questions/38750705/filter-object-properties-by-key-in-es6)
