@@ -30,6 +30,7 @@ export async function getStaticProps() {
     hour12: false,
     hour: '2-digit',
     minute: '2-digit',
+    timeZone: 'Asia/Kolkata',
   });
 
   const filterObject = (object, properties) => {
@@ -60,6 +61,8 @@ export async function getStaticProps() {
     posts = posts.map((post) => {
       post.title = decode(post.title);
       post.postURL = `https://news.ycombinator.com/item?id=${post['id']}`;
+      // Some HN posts like AskHN don't have url property
+      if (!post.url) post.url = post.postURL;
       return filterObject(post, properties);
     });
     return { name, posts };
@@ -78,6 +81,7 @@ export async function getStaticProps() {
       'webdev',
       'web_design',
       'javascript',
+      'programming',
     ];
     const data = await (
       await fetch(
@@ -100,6 +104,7 @@ export async function getStaticProps() {
     posts = posts.map((post) => {
       post.title = decode(post.title);
       post.postURL = `https://www.reddit.com${post['permalink']}`;
+      // Cross posts have relative url
       try {
         let url = new URL(post.url);
       } catch (e) {
@@ -133,6 +138,6 @@ export async function getStaticProps() {
       weather,
       time,
     },
-    revalidate: 600,
+    revalidate: 1800,
   };
 }
