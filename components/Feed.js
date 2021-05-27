@@ -10,10 +10,20 @@ export default function Feed({ data }) {
           post.url = new URL(post.url);
           return (
             <div className={styles.item} key={i}>
-              <a className={styles.title} href={post.postURL} target="_blank">
+              <a
+                className={styles.title}
+                href={post.postURL}
+                target="_blank"
+                rel="noopener"
+              >
                 {post.title}
               </a>
-              <a className={styles.url} href={post.url.href} target="_blank">
+              <a
+                className={styles.url}
+                href={post.url.href}
+                target="_blank"
+                rel="noopener"
+              >
                 ({post.url.hostname})
               </a>
             </div>

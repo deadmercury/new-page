@@ -1,6 +1,6 @@
 # New Page
 
-For Home or New Tab. Made with NextJS and deployed on Vercel.
+For Home or New Tab. Made with NextJS and deployed on Vercel [here](https://new-page.vercel.app/).
 
 ## Environment Variables
 

@@ -77,6 +77,7 @@ export async function getStaticProps() {
       'pune',
       'webdev',
       'web_design',
+      'javascript',
     ];
     const data = await (
       await fetch(
@@ -132,6 +133,6 @@ export async function getStaticProps() {
       weather,
       time,
     },
-    revalidate: 1800,
+    revalidate: 600,
   };
 }
