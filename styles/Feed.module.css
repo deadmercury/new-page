@@ -6,6 +6,7 @@
   background-color: #222222;
   height: fit-content;
   border-radius: 5px;
+  overflow-wrap: anywhere;
 }
 
 .posts {
