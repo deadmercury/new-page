@@ -44,3 +44,15 @@
     width: 70vw;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .select {
+    display: none;
+  }
+  .searchbar {
+    width: 100%;
+  }
+  .form {
+    justify-self: unset;
+  }
+}
