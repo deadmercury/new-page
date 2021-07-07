@@ -10,6 +10,8 @@ export default function Index({ hnPosts, time, redditPosts, weather }) {
   return (
     <>
       <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>New tab</title>
         <meta name="description" content="Custom new tab page" />
       </Head>
