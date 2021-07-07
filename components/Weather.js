@@ -6,8 +6,8 @@ export default function Weather({ weather }) {
     <div className={styles.container} title="Pune">
       <Image
         src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
-        width="60px"
-        height="60px"
+        width="80px"
+        height="80px"
         alt="Weather Icon"
       />
       <span className={styles.temp}>{Math.round(weather.main.temp)}</span>
