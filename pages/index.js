@@ -75,8 +75,6 @@ export async function getStaticProps() {
     const subreddits = [
       'piracy',
       'crackwatch',
-      'showerthoughts',
-      'askreddit',
       'nostupidquestions',
       'cricket',
       'pune',
