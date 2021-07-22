@@ -188,14 +188,10 @@ export default function SearchBar() {
       />
       <button
         type="submit"
-        aria-labelledby="button-label"
+        aria-label="Search Button"
         className={styles.searchicon}
       >
-        <span id="button-label" hidden>
-          Enter Your Query
-        </span>
         <svg
-          aria-hidden="true"
           focusable="false"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -209,11 +205,8 @@ export default function SearchBar() {
         type="button"
         className={styles.select}
         onClick={changeEngine}
-        aria-labelledby="engine-label"
+        aria-label={`${engines[engineIdx]} Icon`}
       >
-        <span id="engine-label" hidden>
-          Change Search Engine
-        </span>
         {engineIcons[engineIdx]}
       </button>
     </form>
