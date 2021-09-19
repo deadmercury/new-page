@@ -117,7 +117,7 @@ export async function getStaticProps() {
 
   const fetchWeather = async () => {
     const key = process.env.OWP_API;
-    const city = 'pune';
+    const city = process.env.NEXT_PUBLIC_CITY;
     const data = await (
       await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`
