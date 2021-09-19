@@ -74,14 +74,13 @@ export async function getStaticProps() {
     // list of subreddits. one is chosen at random.
     const subreddits = [
       'piracy',
-      'crackwatch',
-      'nostupidquestions',
       'cricket',
-      'pune',
+      'bangalore',
       'webdev',
       'web_design',
       'javascript',
       'programming',
+      'programmingcirclejerk',
     ];
     const data = await (
       await fetch(
