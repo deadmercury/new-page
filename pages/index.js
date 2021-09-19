@@ -86,7 +86,7 @@ export async function getStaticProps() {
     const data = await (
       await fetch(
         `https://www.reddit.com/r/${
-          subreddits[Math.round(Math.random() * subreddits.length)]
+          subreddits[Math.floor(Math.random() * subreddits.length)]
         }.json`
       )
     ).json();
