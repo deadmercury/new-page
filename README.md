@@ -4,8 +4,11 @@ For Home or New Tab. Made with NextJS and deployed on Vercel [here](https://new-
 
 ## Environment Variables
 
-`OWP_API` - OpenWeatherMap API Key </br>
-`NEXT_PUBLIC_CITY` - City name for weather (Public)
+- `OWP_API` - OpenWeatherMap API Key
+
+- `SUBREDDITS' - Space separated list of subreddit names
+
+- `NEXT_PUBLIC_CITY` - City name for weather (Public)
 
 ## References
 

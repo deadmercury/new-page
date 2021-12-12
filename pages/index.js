@@ -72,16 +72,7 @@ export async function getStaticProps() {
 
   const fetchReddit = async () => {
     // list of subreddits. one is chosen at random.
-    const subreddits = [
-      'piracy',
-      'cricket',
-      'bangalore',
-      'webdev',
-      'web_design',
-      'javascript',
-      'programming',
-      'programmingcirclejerk',
-    ];
+    const subreddits = process.env.SUBREDDITS.split(' ');
     const data = await (
       await fetch(
         `https://www.reddit.com/r/${
