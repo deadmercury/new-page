@@ -77,7 +77,7 @@ export async function getStaticProps() {
       await fetch(
         `https://www.reddit.com/r/${
           subreddits[Math.floor(Math.random() * subreddits.length)]
-        }.json`
+        }/hot.json`
       )
     ).json();
     // reddit api is bloated
