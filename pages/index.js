@@ -121,9 +121,12 @@ export async function getStaticProps() {
     return weather;
   };
 
-  const hnPosts = await fetchHN();
-  const redditPosts = await fetchReddit();
-  const weather = await fetchWeather();
+  const [hnPosts, redditPosts, weather] = await Promise.all([
+    fetchHN(),
+    fetchReddit(),
+    fetchWeather(),
+  ]);
+
   return {
     props: {
       hnPosts,
