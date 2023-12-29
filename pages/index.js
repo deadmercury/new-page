@@ -6,7 +6,7 @@ import styles from '../styles/index.module.css';
 import { decode } from 'html-entities';
 
 export default function Index({ hnPosts, time, redditPosts, weather }) {
-  console.log(`Last Updated at ${time}`);
+  console.log(`Last Updated ${time}`);
   return (
     <>
       <Head>
@@ -28,11 +28,14 @@ export default function Index({ hnPosts, time, redditPosts, weather }) {
 }
 
 export async function getStaticProps() {
-  const time = new Date().toLocaleTimeString('en-in', {
+  const time = new Date().toLocaleDateString('en-in', {
     hour12: false,
     hour: '2-digit',
     minute: '2-digit',
     timeZone: 'Asia/Kolkata',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
   });
 
   const filterObject = (object, properties) => {
