@@ -75,7 +75,7 @@ export async function getStaticProps() {
     const subreddits = process.env.SUBREDDITS.split(' ');
     const data = await (
       await fetch(
-        `https://www.reddit.com/r/${
+        `https://old.reddit.com/r/${
           subreddits[Math.floor(Math.random() * subreddits.length)]
         }/hot.json`
       )
