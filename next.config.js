@@ -24,7 +24,12 @@ const withPWA = require('next-pwa')({
 
 module.exports = withPWA({
   images: {
-    domains: ['openweathermap.org'],
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'openweathermap.org',
+      },
+    ],
   },
   swcMinify: true,
 });
