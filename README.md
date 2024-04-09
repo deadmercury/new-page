@@ -1,12 +1,29 @@
 # New Page
 
-For Home or New Tab. Made with NextJS and deployed on Vercel [here](https://new-page.vercel.app/).
+For Home or New Tab. Made with NextJS. Used to be deployed on Vercel once, but due to recent changes in Reddit's API pricing model, it's not really feasible anymore.
+
+
+## Local Setup
+
+Follow the steps below to run locally -
+
+```console
+npm install
+```
+
+then
+
+```console
+npm run dev
+```
+
+`nodemon` or similar tool can be used to run the service indefinitely. Or `node-auto-launch` to start it at boot.
 
 ## Environment Variables
 
 - `OWP_API` - OpenWeatherMap API Key
 
-- `SUBREDDITS' - Space separated list of subreddit names
+- `SUBREDDITS` - Space separated list of subreddit names
 
 - `NEXT_PUBLIC_CITY` - City name for weather (Public)
 
