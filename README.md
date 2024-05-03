@@ -2,6 +2,9 @@
 
 For Home or New Tab. Made with NextJS. Used to be deployed on Vercel once, but due to recent changes in Reddit's API pricing model, it's not really feasible anymore.
 
+## Screenshots
+
+![Desktop Screenshot](./screenshots/screenshot.png)
 
 ## Local Setup
 
